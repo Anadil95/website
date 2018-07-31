@@ -16,6 +16,57 @@
     gtag('js', new Date());
     gtag('config', 'UA-56731261-3');
   </script>
+  
+  <style>
+.btn-group button {
+    background-color:  #b3ccff; 
+    border: 1px solid  #b3ccff; 
+    color: white; 
+    padding: 10px 44px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+            margin: 10px 15px;
+                border-radius: 5px 5px 5px 5px;
+
+
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color:  #ffffb3;
+        color: Red; /* White text */
+            border: 1px solid  #ffffb3; /* Green border */
+
+
+}
+
+.btn-group{
+    position: absolute;
+    right: 290px;
+}
+
+.buttons{
+    position: relative;
+        margin: 10px 15px;
+        float: center; /* Float the buttons side by side */
+
+}
+
+.row{
+  display:flex;
+}
+</style>
+  
 </head>
 <body>
   <nav id="error-message" class="error">
@@ -66,348 +117,23 @@
         </p>
       </div>
     </div>
-    <div class="tracks">
-      <h2>المسارات</h2>
-      <div class="track">
-        <h3>المُستكشف (Explorer)</h3>
-        <p>
-          <span class="badge">7 أيّام</span>يركّز هذا المسار على إعطاء المتدرّب فرصةً لاكتشافِ العديد من الأشياء، مثل Linux و Command Line وأساسيّات الشبكة، والمبادرة والمساهمة في مجتمع الإنترنت، وغير ذلك.
-        </p>
-      </div><!--
-      --><div class="track">
-        <h3>المُحلِّل (Analyst)</h3>
-        <p>
-          <span class="badge">4 أيّام</span>يهدفُ المسار إلى تمكين المتدرّب من تحليل وتصميم الأنظمة من خلال تحليل حالةٍ معيّنة وحلّ المشاكل المعقّدة المرتبطة بها، ثمّ ترجمة الحلّ إلى مخطّط Business Process. يسعى المسار أيضًا إلى أن يمتلك المتدرّب المهارات ذات العلاقة بتجربة المستخدم (UX) وواجهة المستخدم (UI).
-        </p>
-      </div><!--
-      --><div class="track">
-        <h3>الديڤ أوبزر (DevOpser)</h3>
-        <p>
-          <span class="badge">10 أيّام</span>”ديڤ أوبز (DevOps)“ هي ممارسةٌ تهدف إلى الدمج بين تطوير البرمجيّات (ديڤ Dev) وتشغيل البرمجيّات (أوبز Ops). الميزة الأساسيّة لكلّ هذا تكمن في أتمتة (Automation) ومراقبة (Monitoring) كلّ خطوات بناء البرمجيّة، من التكامل (Integration)، والاختبار (Testing)، والإطلاق (Releasing)، والنشر (Deployment)، وإدارة البنية التحتيّة (Infrastructure Management).
-        </p>
-      </div><!--
-      --><div class="track">
-        <h3>المطوِّر (Developer)</h3>
-        <p>
-          <span class="badge">10 أيّام</span>تكمنُ الفكرة في هذا المسار إلى تمكين المتدرّب من بناء التطبيقات، سواءً كانت للويب أو للجوّال، وسواءً كانت صغيرةً أو كبيرةً، وإلى تعريف المتدرّب بمفاهيم الحوسبة دون خادم (Serverless Computing)، وإلى فتح أبواب الإبتكار والتبنّي للتقنيّات والمنصّات.
-        </p>
-      </div><!--
-      --><div class="track">
-        <h3>المُختبِر (Tester)</h3>
-        <p>
-          <span class="badge">يومان</span>يركّز هذا المسار على إعطاء المتدرّب لمحةً سريعةً عن الاختبارات من نوع End-to-End Testing، عن طريق تنفيذ بعض المهام واكتساب المعرفة في حقول ضمان الجودة (Quality Assurance).
-        </p>
-      </div><!--
-      --><div class="track">
-        <h3>المُخترِق (Hacker)</h3>
-        <p>
-          <span class="badge">يومان</span>يهدفُ المسار إلى تقديم أساسيّات الإختراق الأخلاقي (Ethical Hacking) للمتدرّب، إضافةً إلى تقنيّاتٍ في اختراق التطبيقات دون الخادم (Serverless Applications).
-        </p>
-      </div><!--
-      --><div class="track">
-        <h3>الرُوبوت (Robot)</h3>
-        <p>
-          <span class="badge">3 أيّام</span>يركّز هذا المسار على إعطاء لمحةٍ سريعةٍ عن ”تعلّم الآلة (Machine Learning, ML)“ و“الذكاء الاصطناعي (Artificial Intelligence, AI)“ وعيّنةٌ من تطبيقاتهما.
-        </p>
-      </div><!--
-      --><div class="track">
-        <h3>الصيّاد (Hunter)</h3>
-        <p>
-          <span class="badge">يومان</span>”الصيّاد“ هو اختصارٌ لصائد الوظائف أو الباحث عنها. يركّز المسار على مساعدة المتدرّب في أن يبحث عن وظيفةٍ مناسبة. سيتمكّن المتدرّب من ذلك من خلال تسويقهِ لذاته في إطار نظرةٍ واقعيّةٍ لمهاراتِه وتعليمِه وخبراتِه. من الجيّد أيضًا أن يحظى المتدرّب بمهارات التواصل المناسبة.
-        </p>
-      </div><!--
-      --><div class="track">
-        <h3>الضّيف (Guest)</h3>
-        <p>
-          <span class="badge">8 أيّام</span><span class="badge">اختياري</span>يلتقي المتدرّبون في هذا المسار مع ضيوفٍ من مجالاتٍ شتّى. يستمع المتدرّبون إليهم ثم يطرحون عليهم تساؤلاتهم ثم يجيب عليها الضيوف. هذا المسار هو مسارٌ اختياريٌّ ومتاحٌ للجميع.
-        </p>
-      </div>
-    </div>
-    <div class="agenda">
-      <h2>الأجندة</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>التاريخ</th>
-            <th>الموضوع</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>الأحد 01/04</td>
-            <td>بداية التسجيل والقبول</td>
-          </tr>
-          <tr>
-            <td>السبت 14/04</td>
-            <td>نهاية التسجيل والقبول</td>
-          </tr>
-          <tr>
-            <td>الجمعة 01/06</td>
-            <td>اللقاء التعريفي</td>
-          </tr>
-          <tr>
-            <td class="agenda-section" colspan="2">المُستكشف (Explorer)</td>
-          </tr>
-          <tr>
-            <td>الأحد 01/07</td>
-            <td>Linux and command line (bash)</td>
-          </tr>
-          <tr>
-            <td>الأثنين 02/07</td>
-            <td>Linux and command line (bash)</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 03/07</td>
-            <td>Networking part 1: theory</td>
-          </tr>
-          <tr>
-            <td>الأربعاء 04/07</td>
-            <td>Networking part 2: tasks</td>
-          </tr>
-          <tr>
-            <td>الخميس 05/07</td>
-            <td>Networking part 2: tasks</td>
-          </tr>
-          <tr>
-            <td>الجمعة 06/07</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>السبت 07/07</td>
-            <td>استضافة الضيف #1</td>
-          </tr>
-          <tr>
-            <td>الأحد 08/07</td>
-            <td>Contrbution: Wikipedia task</td>
-          </tr>
-          <tr>
-            <td>الأثنين 09/07</td>
-            <td>Contrbution: StackOverflow task</td>
-          </tr>
-          <tr>
-            <td class="agenda-section" colspan="2">المُحلِّل (Analyst)</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 10/07</td>
-            <td>Introduction to system analysis and design</td>
-          </tr>
-          <tr>
-            <td>الأربعاء 11/07</td>
-            <td>Analysis</td>
-          </tr>
-          <tr>
-            <td>الخميس 12/07</td>
-            <td>UX and UI</td>
-          </tr>
-          <tr>
-            <td>الجمعة 13/07</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>السبت 14/07</td>
-            <td>استضافة الضيف #2</td>
-          </tr>
-          <tr>
-            <td>الأحد 15/07</td>
-            <td>Design</td>
-          </tr>
-          <tr>
-            <td class="agenda-section" colspan="2">الديڤ أوبزر (DevOpser)</td>
-          </tr>
-          <tr>
-            <td>الأثنين 16/07</td>
-            <td>Virtualization</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 17/07</td>
-            <td>Containerization</td>
-          </tr>
-          <tr>
-            <td>الأربعاء 18/07</td>
-            <td>Container orchestration</td>
-          </tr>
-          <tr>
-            <td>الخميس 19/07</td>
-            <td>Container orchestration</td>
-          </tr>
-          <tr>
-            <td>الجمعة 20/07</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>السبت 21/07</td>
-            <td>استضافة الضيف #3</td>
-          </tr>
-          <tr>
-            <td>الأحد 22/07</td>
-            <td>Container orchestration</td>
-          </tr>
-          <tr>
-            <td>الأثنين 23/07</td>
-            <td>IT automation</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 24/07</td>
-            <td>Cloud computing</td>
-          </tr>
-          <tr>
-            <td>الأربعاء 25/07</td>
-            <td>Cloud computing</td>
-          </tr>
-          <tr>
-            <td>الخميس 26/07</td>
-            <td>Infrastructure as a Code (IaC)</td>
-          </tr>
-          <tr>
-            <td>الجمعة 27/07</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>السبت 28/07</td>
-            <td>استضافة الضيف #4</td>
-          </tr>
-          <tr>
-            <td>الأحد 29/07</td>
-            <td>يوم إضافي للمهام الغير مُكتملة</td>
-          </tr>
-          <tr>
-            <td class="agenda-section" colspan="2">المطوِّر (Developer)</td>
-          </tr>
-          <tr>
-            <td>الأثنين 30/07</td>
-            <td>Building a portfolio</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 31/07</td>
-            <td>Controlling the code</td>
-          </tr>
-          <tr>
-            <td>الأربعاء 01/08</td>
-            <td>Improving the portfolio</td>
-          </tr>
-          <tr>
-            <td>الخميس 02/08</td>
-            <td>Adding some javascript</td>
-          </tr>
-          <tr>
-            <td>الجمعة 03/08</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>السبت 04/08</td>
-            <td>استضافة الضيف #5</td>
-          </tr>
-          <tr>
-            <td>الأحد 05/08</td>
-            <td>Making a simple endpoint</td>
-          </tr>
-          <tr>
-            <td>الأثنين 06/08</td>
-            <td>Making a simple endpoint</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 07/08</td>
-            <td>Building a single page application</td>
-          </tr>
-          <tr>
-            <td>الأربعاء 08/08</td>
-            <td>Building a single page application</td>
-          </tr>
-          <tr>
-            <td>الخميس 09/08</td>
-            <td>Building a mobile application</td>
-          </tr>
-          <tr>
-            <td>الجمعة 10/08</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>السبت 11/08</td>
-            <td>استضافة الضيف #6</td>
-          </tr>
-          <tr>
-            <td>الأحد 12/08</td>
-            <td>Building a mobile application</td>
-          </tr>
-          <tr>
-            <td class="agenda-section" colspan="2">المُختبِر (Tester)</td>
-          </tr>
-          <tr>
-            <td>الأثنين 13/08</td>
-            <td>Test types and steps</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 14/08</td>
-            <td>End to end testing basics</td>
-          </tr>
-          <tr>
-            <td class="agenda-section" colspan="2">المُخترِق (Hacker)</td>
-          </tr>
-          <tr>
-            <td>الأربعاء 15/08</td>
-            <td>Ethical hacking fundamentals</td>
-          </tr>
-          <tr>
-            <td>الخميس 16/08</td>
-            <td>Hacking a serverless application</td>
-          </tr>
-          <tr>
-            <td>الجمعة 17/08</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>السبت 18/08</td>
-            <td>استضافة الضيف #7</td>
-          </tr>
-          <tr>
-            <td class="agenda-section" colspan="2">الرُوبوت (Robot)</td>
-          </tr>
-          <tr>
-            <td>الأحد 19/08</td>
-            <td>Introduction to Machine Learning</td>
-          </tr>
-          <tr>
-            <td>الأثنين 20/08</td>
-            <td>Introduction to TensorFlow</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 21/08</td>
-            <td>Installing and example</td>
-          </tr>
-          <tr>
-            <td class="agenda-section" colspan="2">الصيّاد (Hunter)</td>
-          </tr>
-          <tr>
-            <td>الأربعاء 22/08</td>
-            <td>Making a CV</td>
-          </tr>
-          <tr>
-            <td>الخميس 23/08</td>
-            <td>Making a video resume</td>
-          </tr>
-          <tr>
-            <td>الجمعة 24/08</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>السبت 25/08</td>
-            <td>استضافة الضيف #8</td>
-          </tr>
-          <tr>
-            <td>الأحد 26/08</td>
-            <td>اللقاء الختامي</td>
-          </tr>
-          <tr>
-            <td>الأثنين 27/08</td>
-            <td>تعبئة الإستبانة حول التدريب</td>
-          </tr>
-          <tr>
-            <td>الثلاثاء 28/08</td>
-            <td>تقييم المتدرّبين وتسليم الشهادات</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+   
+   
+    <p>&nbsp&nbsp</p>
+
+
+<div class="btn-group">
+  <button>المسارات</button> 
+  <button>الأجندة</button>
+  <button>آراء المتدربين</button>
+</div>
+
+<p>&nbsp</p>
+  
+  <p>&nbsp</p>
+ <p>&nbsp</p>
+   
+   
     <div class="actions">
       <ul>
         <li>
